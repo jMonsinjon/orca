@@ -8,4 +8,6 @@ WORKDIR workdir
 
 RUN dpkg -i ./packages/*.deb
 
-CMD ["/orca/gate/bin/orca"]
+EXPOSE 8083
+
+CMD ["/opt/orca/bin/orca"]
